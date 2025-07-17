@@ -5,8 +5,10 @@ import react from '@vitejs/plugin-react';
 // Supabase credentials are injected for GitHub Pages build-time usage.
 // Ensure these match your actual project keys before deploying.
 export default defineConfig({
-    build: {
-    outDir: 'dist' // 👈 this should be here
+   root: 'fooderio-js', // 👈 tells Vite where index.html lives now
+  base: '/Fooderio/',
+  build: {
+    outDir: '../dist', // 👈 output goes back to root level
   },
   base: '/Fooderio/', // Matches your repo name!
   plugins: [react()],
