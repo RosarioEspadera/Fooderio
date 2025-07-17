@@ -8,7 +8,6 @@ export default defineConfig({
     build: {
     outDir: 'dist' // 👈 this should be here
   },
-
   base: '/Fooderio/', // Matches your repo name!
   plugins: [react()],
   define: {
